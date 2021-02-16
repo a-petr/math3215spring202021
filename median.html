@@ -12943,8 +12943,13 @@ ul.typeahead-list  > li > a.pull-right {
 /*# sourceMappingURL=style.min.css.map */
     </style>
 <style type="text/css">
-    .highlight .hll { background-color: #ffffcc }
-.highlight  { background: #f8f8f8; }
+    pre { line-height: 125%; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: #ffffcc }
+.highlight { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
@@ -13194,6 +13199,7 @@ $$\sum\limits_{i=1}^{2k}|x_i-c|= \color{blue}{(|x_1-c|+|x_{2k}-c|)}+\color{blue}
 $$\sum\limits_{i=1}^{2k+1}|x_i-c|= \color{blue}{(|x_1-c|+|x_{2k+1}-c|)}+\color{blue}{(|x_2-c|+|x_{2k}-c|)}+\cdots + \color{blue}{(|x_{k}-c|+|x_{k+2}-c|)}+\color{green}{|x_{k+1}-c|}.$$<p><br>
 <img src = "images/median_odd_group.png" width=600></p>
 <p>Again, according to the discussion above the first term is minimal when $c\in [x_1, x_{2k+1}]$, the second term is minimal when $c\in [x_2, x_{2k}]$ and so on. Fiinally, the last term $|x_{k+1}-c|$ is minimal when $c=x_{k+1}$. Thus, when $c=x_{k+1}$ all the terms have their smallest values since it belongs to all the above intervals. And we concude thay the minimal value of their sum is at the median. $\blacksquare$</p>
+<p>A more general proof of the theorem can be found in "The theory of probability" by Gnedenko (p. 190) among other places.</p>
 
 </div>
 </div>
@@ -13212,7 +13218,7 @@ $$\sum\limits_{i=1}^{2k+1}|x_i-c|= \color{blue}{(|x_1-c|+|x_{2k+1}-c|)}+\color{b
     }
 
     var interact = new window.NbInteract({
-      spec: 'a-petr/math3215fall2020/master',
+      spec: 'a-petr/math3215spring2021/master',
       baseUrl: 'https://mybinder.org',
       provider: 'gh',
     })
